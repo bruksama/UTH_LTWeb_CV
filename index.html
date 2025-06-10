@@ -3,9 +3,544 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Digital CV - bruksama</title>
   </head>
   <body>
-    <p>Hello World</p>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <span class="logo-text">Digital CV</span>
+        </div>
+        <ul class="navbar-items">
+          <li class="navbar-item">
+            <a href="#header" class="navbar-link">Trang chủ</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link">Thông tin cá nhân</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#purpose" class="navbar-link">Thông tin nghề nghiệp</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#hobbies" class="navbar-link">Sở thích</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#skills" class="navbar-link">Ngôn ngữ, kỹ năng</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#certificate" class="navbar-link"
+              >Chứng chỉ - Giải thưởng</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a href="#projects" class="navbar-link">Dự án</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link">Liên hệ</a>
+          </li>
+        </ul>
+        <div class="navbar-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <section class="header" id="header">
+      <div class="header-container">
+        <div class="header-content">
+          <div class="header-text">
+            <h1 class="header-title">
+              Xin chào, tôi là <span class="highlight">bruksama</span>
+            </h1>
+            <p class="header-subtitle">Web Developer</p>
+            <p class="header-description">
+              Một sinh viên năm 2 của trường Đại học Giao Thông Vận Tải TP.HCM,
+              với hoài bão trở thành một lập trình viên truyền cảm hứng tới giới
+              trẻ.
+            </p>
+            <div class="header-buttons">
+              <a href="#contact" class="btn btn-primary">Liên hệ</a>
+              <a href="#projects" class="btn btn-secondary">Xem dự án</a>
+            </div>
+          </div>
+          <div class="header-image">
+            <div class="image-container">
+              <div class="floating-elements">
+                <div class="floating-element element-1"></div>
+                <div class="floating-element element-2"></div>
+                <div class="floating-element element-3"></div>
+              </div>
+              <img
+                src="assets/images/IMG_20241124_125858.png"
+                alt="Profile Picture"
+                class="profile-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Thông tin cá nhân</h2>
+          <p class="section-subtitle">Tìm hiểu thêm về tôi</p>
+        </div>
+        <div class="about-content">
+          <div class="about-info">
+            <h3>Về tôi</h3>
+            <p>
+              Tôi là một Web Developer đam mê tạo ra những trang web có giao
+              diện đẹp mắt và hiện đại. Với kinh nghiệm trong việc phát triển
+              ứng dụng web, tôi luôn tìm kiếm những công nghệ mới để cải thiện
+              trải nghiệm người dùng.
+            </p>
+            <div class="personal-info">
+              <div class="info-item">
+                <span class="info-label">Họ tên:</span>
+                <span class="info-value">Nguyễn Tấn Lộc</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Tuổi:</span>
+                <span class="info-value">20</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Địa chỉ:</span>
+                <span class="info-value">TP. HCM, Việt Nam</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Email:</span>
+                <span class="info-value">locnt0940@ut.edu.vn</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Năm học tập và thực hành</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2+</div>
+              <div class="stat-label">Dự án hoàn thành</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">0+</div>
+              <div class="stat-label">Năm làm việc thực tế</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Purpose -->
+    <section class="purpose" id="purpose">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Thông tin nghề nghiệp</h2>
+          <p class="section-subtitle">Khát vọng của tôi</p>
+        </div>
+        <p style="text-align: justify; font-size: var(--font-size-lg)">
+          Tôi mong muốn trở thành một lập trình viên có khả năng truyền cảm hứng
+          tới giới trẻ. Mục tiêu là trở thành một Full Stack Developer giỏi. Có
+          khả năng sử dụng tốt các công nghệ hiện có và trong tương lai sẽ tạo
+          ra được một công nghệ của riêng mình.
+        </p>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="hobbies" id="hobbies">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Sở thích</h2>
+          <p class="section-subtitle">Những điều tôi thích làm</p>
+        </div>
+        <div class="hobbies-content">
+          <div class="hobby-item">
+            <i class="fas fa-code"></i>
+            <h3>Viết code</h3>
+          </div>
+          <div class="hobby-item">
+            <i class="fas fa-music"></i>
+            <h3>Nghe nhạc</h3>
+          </div>
+          <div class="hobby-item">
+            <i class="fas fa-gamepad"></i>
+            <h3>Chơi game</h3>
+          </div>
+          <div class="hobby-item">
+            <i class="fas fa-book"></i>
+            <h3>Đọc truyện</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Ngôn ngữ, kỹ năng</h2>
+          <p class="section-subtitle">
+            Những kỹ năng tôi đang trang bị bên mình
+          </p>
+        </div>
+        <div class="skills-content">
+          <div class="skills-categories">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">HTML</span>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">CSS</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Node.js</span>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="70"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Java</span>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="75"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="70"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">PHP</span>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Database</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">MySQL</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Firebase</span>
+                    <span class="skill-percentage">60%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="60"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Kỹ năng mềm</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Giao tiếp</span>
+                    <span class="skill-percentage">100%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Làm việc nhóm</span>
+                    <span class="skill-percentage">100%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Tiếng Anh</span>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Làm việc độc lập</span>
+                    <span class="skill-percentage">100%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate -->
+    <section class="certificate" id="certificate">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Chứng chỉ - Giải thưởng</h2>
+          <p class="section-subtitle">
+            Những chứng chỉ và giải thưởng tôi đã nhận
+          </p>
+        </div>
+        <p style="text-align: center; font-size: var(--font-size-lg)">
+          Không có
+        </p>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Dự án</h2>
+          <p class="section-subtitle">Những dự án tôi đã làm</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/project1.jpg" alt="UTH_LTWeb_Chatbot" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a> -->
+                  <a
+                    href="https://github.com/bruksama/UTH_LTWeb_Chatbot"
+                    class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>UTH_LTWeb_Chatbot</h3>
+              <p>Website chatbot với giao diện hiện đại.</p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Gemini</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/project3.jpg" alt="UTH_LTWeb_CV" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/bruksama/UTH_LTWeb_CV"
+                    class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>UTH_LTWeb_CV</h3>
+              <p>
+                Website portfolio cá nhân với thiết kế responsive, hiệu ứng
+                animation.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/project3.jpg" alt="Portfolio Website" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <!-- <a href="/" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a> -->
+                  <a
+                    href="https://github.com/bruksama/UTH_LTJava_QuanLyChiTieu"
+                    class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>UTH_LTJava_QuanLyChiTieu</h3>
+              <p>Ứng dụng quản lý chi tiêu cá nhân với giao diện hiện đại.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">JavaFX</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Liên hệ</h2>
+          <p class="section-subtitle">Kết nối với tôi</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>locnt0940@ut.edu.vn</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Điện thoại</h4>
+                <p>+84 8678 515 29</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Địa chỉ</h4>
+                <p>TP. HCM, Việt Nam</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/bruksama" class="social-link"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/this.is.bruk"
+                class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Chủ đề"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Nội dung email"
+                  rows="14"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Gửi email</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Nguyễn Tấn Lộc.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
