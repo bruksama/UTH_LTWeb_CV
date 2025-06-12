@@ -15,6 +15,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
     <title>Digital CV - bruksama</title>
   </head>
   <body>
@@ -99,12 +103,12 @@
     <!-- About -->
     <section class="about" id="about">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2 class="section-title">Thông tin cá nhân</h2>
           <p class="section-subtitle">Tìm hiểu thêm về tôi</p>
         </div>
         <div class="about-content">
-          <div class="about-info">
+          <div class="about-info" data-aos="fade-right">
             <h3>Về tôi</h3>
             <p>
               Tôi là một Web Developer đam mê tạo ra những trang web có giao
@@ -131,7 +135,7 @@
               </div>
             </div>
           </div>
-          <div class="about-stats">
+          <div class="about-stats" data-aos="fade-left">
             <div class="stat-item">
               <div class="stat-number">3+</div>
               <div class="stat-label">Năm học tập và thực hành</div>
@@ -152,11 +156,15 @@
     <!-- Purpose -->
     <section class="purpose" id="purpose">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2 class="section-title">Thông tin nghề nghiệp</h2>
           <p class="section-subtitle">Khát vọng của tôi</p>
         </div>
-        <p style="text-align: justify; font-size: var(--font-size-lg)">
+        <p
+          style="text-align: justify; font-size: var(--font-size-lg)"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           Tôi mong muốn trở thành một lập trình viên có khả năng truyền cảm hứng
           tới giới trẻ. Mục tiêu là trở thành một Full Stack Developer giỏi. Có
           khả năng sử dụng tốt các công nghệ hiện có và trong tương lai sẽ tạo
@@ -168,24 +176,24 @@
     <!-- Hobbies -->
     <section class="hobbies" id="hobbies">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2 class="section-title">Sở thích</h2>
           <p class="section-subtitle">Những điều tôi thích làm</p>
         </div>
         <div class="hobbies-content">
-          <div class="hobby-item">
+          <div class="hobby-item" data-aos="fade-up" data-aos-delay="100">
             <i class="fas fa-code"></i>
             <h3>Viết code</h3>
           </div>
-          <div class="hobby-item">
+          <div class="hobby-item" data-aos="fade-up" data-aos-delay="200">
             <i class="fas fa-music"></i>
             <h3>Nghe nhạc</h3>
           </div>
-          <div class="hobby-item">
+          <div class="hobby-item" data-aos="fade-up" data-aos-delay="300">
             <i class="fas fa-gamepad"></i>
             <h3>Chơi game</h3>
           </div>
-          <div class="hobby-item">
+          <div class="hobby-item" data-aos="fade-up" data-aos-delay="400">
             <i class="fas fa-book"></i>
             <h3>Đọc truyện</h3>
           </div>
@@ -196,7 +204,7 @@
     <!-- Skills -->
     <section class="skills" id="skills">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2 class="section-title">Ngôn ngữ, kỹ năng</h2>
           <p class="section-subtitle">
             Những kỹ năng tôi đang trang bị bên mình
@@ -204,7 +212,7 @@
         </div>
         <div class="skills-content">
           <div class="skills-categories">
-            <div class="skill-category">
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
               <h3>Frontend</h3>
               <div class="skill-items">
                 <div class="skill-item">
@@ -236,7 +244,7 @@
                 </div>
               </div>
             </div>
-            <div class="skill-category">
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
               <h3>Backend</h3>
               <div class="skill-items">
                 <div class="skill-item">
@@ -277,7 +285,7 @@
                 </div>
               </div>
             </div>
-            <div class="skill-category">
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
               <h3>Database</h3>
               <div class="skill-items">
                 <div class="skill-item">
@@ -300,7 +308,7 @@
                 </div>
               </div>
             </div>
-            <div class="skill-category">
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
               <h3>Kỹ năng mềm</h3>
               <div class="skill-items">
                 <div class="skill-item">
@@ -349,13 +357,17 @@
     <!-- Certificate -->
     <section class="certificate" id="certificate">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2 class="section-title">Chứng chỉ - Giải thưởng</h2>
           <p class="section-subtitle">
             Những chứng chỉ và giải thưởng tôi đã nhận
           </p>
         </div>
-        <p style="text-align: center; font-size: var(--font-size-lg)">
+        <p
+          style="text-align: center; font-size: var(--font-size-lg)"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           Không có
         </p>
       </div>
@@ -364,14 +376,14 @@
     <!-- Project -->
     <section class="projects" id="projects">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2 class="section-title">Dự án</h2>
           <p class="section-subtitle">Những dự án tôi đã làm</p>
         </div>
         <div class="projects-grid">
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
             <div class="project-image">
-              <img src="img/project1.jpg" alt="UTH_LTWeb_Chatbot" />
+              <img src="https://placehold.co/600x400" alt="UTH_LTWeb_Chatbot" />
               <div class="project-overlay">
                 <div class="project-links">
                   <!-- <a href="#" class="project-link"
@@ -399,12 +411,15 @@
               </div>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
             <div class="project-image">
-              <img src="img/project3.jpg" alt="UTH_LTWeb_CV" />
+              <img
+                src="assets/images/Screenshot 2025-06-12 233328.png"
+                alt="UTH_LTWeb_CV"
+              />
               <div class="project-overlay">
                 <div class="project-links">
-                  <a href="#" class="project-link"
+                  <a href="/" class="project-link"
                     ><i class="fas fa-external-link-alt"></i
                   ></a>
                   <a
@@ -428,9 +443,12 @@
               </div>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
             <div class="project-image">
-              <img src="img/project3.jpg" alt="Portfolio Website" />
+              <img
+                src="assets/images/Screenshot 2025-06-12 234017.png"
+                alt="Portfolio Website"
+              />
               <div class="project-overlay">
                 <div class="project-links">
                   <!-- <a href="/" class="project-link"
@@ -461,12 +479,12 @@
     <!-- Contact -->
     <section class="contact" id="contact">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2 class="section-title">Liên hệ</h2>
           <p class="section-subtitle">Kết nối với tôi</p>
         </div>
         <div class="contact-content">
-          <div class="contact-info">
+          <div class="contact-info" data-aos="fade-right">
             <div class="contact-item">
               <div class="contact-icon">
                 <i class="fas fa-envelope"></i>
@@ -495,17 +513,24 @@
               </div>
             </div>
             <div class="social-links">
-              <a href="https://github.com/bruksama" class="social-link"
+              <a
+                href="https://github.com/bruksama"
+                class="social-link"
+                data-aos="fade-up"
+                data-aos-delay="100"
                 ><i class="fab fa-github"></i
               ></a>
               <a
                 href="https://www.facebook.com/this.is.bruk"
                 class="social-link"
+                data-aos="fade-up"
+                data-aos-delay="200"
                 ><i class="fab fa-facebook"></i
               ></a>
             </div>
           </div>
-          <div class="contact-form">
+          <div class="contact-form" data-aos="fade-left">
+            <h2>Gửi email cho tôi</h2>
             <form id="contactForm">
               <div class="form-group">
                 <input
@@ -521,7 +546,7 @@
                   id="message"
                   name="message"
                   placeholder="Nội dung email"
-                  rows="14"
+                  rows="13"
                   required
                 ></textarea>
               </div>
@@ -542,5 +567,6 @@
     </section>
 
     <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   </body>
 </html>

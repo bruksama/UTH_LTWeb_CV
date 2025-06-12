@@ -27,13 +27,13 @@ $(document).ready(function () {
       $bars.eq(0).css("transform", "rotate(45deg) translate(5px, 5px)");
       $bars.eq(1).css("opacity", "0");
       $bars.eq(2).css("transform", "rotate(-45deg) translate(7px, -6px)");
-      $("body").css("overflow", "hidden"); // Hide scrollbar when menu is open
+      $("body").css("overflow", "hidden");
     } else {
       $bars.css({
         transform: "none",
         opacity: "1",
       });
-      $("body").css("overflow", "auto"); // Show scrollbar when menu is closed
+      $("body").css("overflow", "auto");
     }
   });
 
@@ -62,6 +62,15 @@ $(document).ready(function () {
       }
     });
   });
+
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+      offset: 100,
+    });
+  }
 
   $contactForm.on("submit", function (e) {
     e.preventDefault();
