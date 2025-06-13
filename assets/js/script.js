@@ -125,7 +125,6 @@ $(document).ready(function () {
     return -c * ((t = t / d - 1) * t * t * t - 1) + b;
   };
 
-  // Trigger animation on page load and scroll
   animateSkillBars();
   $window.on("scroll", animateSkillBars);
 });

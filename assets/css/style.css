@@ -111,6 +111,14 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body,
+html {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .container {
@@ -872,6 +880,8 @@ section {
     transition: var(--transition-normal);
     padding: var(--spacing-lg) 0;
     backdrop-filter: blur(10px);
+    gap: var(--spacing-md);
+    height: 100vh;
   }
 
   .navbar-items.active {
